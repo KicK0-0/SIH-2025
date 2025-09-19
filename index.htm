@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <style>
+        /* Panel 1 Styling */
+        .panel {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(to right, #e6f7ff, #ffffff);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* move content up */
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+        }
+
+        .panel h2 {
+            font-size: 3rem; /* Bigger heading */
+            font-weight: bold;
+            color: #004080;
+            margin-bottom: 25px;
+        }
+
+        .panel p {
+            font-size: 1.5rem; /* Bigger text */
+            color: #333;
+            max-width: 950px;
+            margin: 0 auto 30px auto;
+            line-height: 1.8;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.8rem; /* Bigger quotes */
+            color: #0066cc;
+            margin: 20px 0 40px 0; /* More space below */
+        }
+
+        .panel-images {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            margin-top: 40px; /* Increased gap between text & images */
+            flex-wrap: wrap;
+        }
+
+        .panel-images img {
+            width: 280px; /* Bigger images */
+            height: auto;
+            border-radius: 18px;
+            box-shadow: 0px 6px 18px rgba(0,0,0,0.25);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .panel-images img:hover {
+            transform: scale(1.08);
+        }
+
+        /* Panel 2 Styling */
+        .panel-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%; /* Same as Panel 1 */
+            padding: 60px 40px;
+            gap: 20px;
+            flex-wrap: wrap; /* For responsiveness */
+            background: linear-gradient(to right, #f9f9f9, #ffffff); /* Optional */
+            box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        .panel-2 .panel-section {
+            flex: 1; /* Equal width for all sections */
+            min-width: 450px; /* Ensures sections don't shrink too much */
+            background: #f0f1f1;; /* Section background */
+            border-radius: 15px;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 6px 18px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .panel-2 .panel-section:hover {
+            transform: scale(1.05);
+        }
+
+        .panel-2 .panel-section h3 {
+            font-size: 1.8rem;
+            color: #004080;
+            margin-bottom: 25px;
+        }
+
+        .panel-2 .panel-section a {
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            /* background-color: #0066cc; */
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            background: #004080;;
+        }
+
+        .panel-2 .panel-section a:hover {
+            background-color: #004080;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <h3><b>TEEN</b>EASE</h3>
+        <div>
+            <button>Login</button>
+            <button>Sign Up</button>
+
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="page">
+            <div id="loop">
+                <h1><b>DIGITAL</b>MENTAL HEALTH <b><i>AND</i></b> <span>PSYCHOLOGICAL</span> SUPPORT SYSTEM.</h1>
+                <h1><b>DIGITAL</b>MENTAL HEALTH <b><i>AND</i></b> <span>PSYCHOLOGICAL</span> SUPPORT SYSTEM.</h1>
+                <h1><b>DIGITAL</b>MENTAL HEALTH <b><i>AND</i></b> <span>PSYCHOLOGICAL</span> SUPPORT SYSTEM.</h1>
+            </div>
+            <h3>Mental health issues among college students have significantly increased in recent years, including anxiety, depression, burnout, sleep disorders, academic stress, and social isolation. This is an initiative to tackle that</h3>
+            <canvas></canvas>
+        </div>
+
+        <div id="page1">
+            <div id="right-text">
+                <h3> PSYCHOLOGICAL RESOURCE HUB</h3>
+                <h1>VIDEOS <br> RELAXATION AUDIO <br> MENTAL WELLNESS GUIDE</h1>
+            </div>
+            <div id="left-text">
+                <h3> CONFIDENTIAL BOOKING SYSTEM</h3>
+                <h1>FOR APPOINTMENT <br> WITH ON CAMPUS <br> COUNSELLOR</h1>
+            </div>
+        </div>
+
+        <div id="page2">
+            <div id="text1">
+                <h3>PEER SUPPORT PLATFORM</h3>
+                <h1>PEER TO PEER <br> SUPPORT FORUM <br> WITH STUDENTS <br> AND FOR STUDENTS</h1>
+            </div>
+            <!-- <div id="text2">
+                <p>LET'S HAVE A BLAST! LET'S JUST THROW AWAY AGE, GENDER, REGION, <br> STATUS, ETC., DON'T COMPETE, DON'T FIGHT, COOPERATE AND SHARE <br> WITH EACH OTHER AND ENJOY IT TOGETHER! SO THAT YOU CAN STAND <br> THERE IN THE NOT-TOO-DISTANT FUTURE AND DREAM OF ANOTHER NEW <br> FUTURE</p>
+            </div> -->
+        </div>
+
+        <div id="page3">
+            <div id="text3">
+                <h3>MENTAL HEALTH THERAPY</h3>
+                <h1>Healing <br> Begins With <br> Talking </h1>
+            </div>
+        </div>
+
+        <section class="horizontal">
+            <div class="h-wrap">
+                <!-- Panel 1 -->
+                <div class="panel">
+                    <h2>Your Mental Wellness Matters</h2>
+                    <p class="quote">"It's okay to not be okay. Seeking help is a sign of strength, not weakness."</p>
+                    <p>Our mission is to provide a safe, supportive, and confidential space for students to seek therapy and counseling with trusted professionals.</p>
+                    <div class="panel-images">
+                        <img src="https://imgs.search.brave.com/BpnUPZpQe6BSNZ_L4XRQBFrl4myz2-oyTxXzk_EjgJY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/Y3JlYXRlLnZpc3Rh/LmNvbS9hcGkvbWVk/aWEvc21hbGwvNTU4/NzU1ODQwL3N0b2Nr/LXBob3RvLW1hbGUt/ZG9jdG9yLXN0YW5k/aW5nLXN0ZXRob3Nj/b3BlLXNtaWxpbmct/d2hpbGUtcG9zaW5n/LWFybXMtY3Jvc3Nl/ZA" alt="Doctor">
+                        <img src="https://imgs.search.brave.com/jOqajwHCxIVUGE-HGyqsJ2K8flaXzWU2-c4T3fjGaMQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTM5/NTEyODY5Ny9waG90/by9wc3ljaG9sb2dp/c3Qtc2Vzc2lvbi5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/VkwydVVWTHpyYjhW/VzZXaVQtbnl2b00z/R2taRThrRGljRGVu/NHVQLU1KMD0" alt="Therapist">
+                        <img src="https://imgs.search.brave.com/jvEj9GKEt9mgN-GXyBEhOy9UsiZCcwgUG-kJhjrPjtU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHJp/dmV3b3Jrcy5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjUv/MDgvSG93LW11Y2gt/ZG9lcy10aGVyYXB5/LWNvc3QtZmVhdHVy/ZWQuanBlZz93PTMw/MA" alt="Therapist Session">
+                        <img src="https://img.freepik.com/free-photo/psychologist-taking-notes-during-session_23-2148749109.jpg" alt="Counselling">
+                    </div>
+                    <p class="quote">"Your mental health is just as important as your physical health."</p>
+                </div>
+
+                <!-- Updated Panel 2 -->
+                <div class="panel panel-2">
+                    <div class="panel-section">
+                        <h3>Relaxation Audio</h3>
+                        <a href="spotify.html">Explore</a>
+                    </div>
+                    <div class="panel-section">
+                        <h3>Video</h3>
+                        <a href="utube.html">Watch</a>
+                    </div>
+                    <div class="panel-section">
+                        <h3>Peer-to-Peer Support System</h3>
+                        <a href="peertopeer.html">Join</a>
+                    </div>
+                    <div class="panel-section">
+                        <h3>Chat Bot</h3>
+                        <a href="chatbot.html">Chat Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>About Us</h4>
+                <p>We are a creative web solutions company, helping businesses build their digital presence.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Email: info@example.com</li>
+                    <li>Phone: +91 98765 43210</li>
+                    <li>Location: Indore, India</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 Your Company. All rights reserved.
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
